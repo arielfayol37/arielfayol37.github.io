@@ -2,7 +2,7 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
   }
   
   .search-form {
@@ -35,12 +35,13 @@
     border: 1px solid #ccc;
     padding-left: 40px;
     height: 32px;
-    width: 60vw;
-    font-size: 20px;
+    width: 50vw;
+    /*font-size: 20px;*/
     transition: box-shadow 0.3s ease;
     background-color: transparent;
-    font-family: Roboto,arial,sans-serif;
+   /* font-family: 'Times New Roman', Times, serif, Roboto,arial,sans-serif;*/
     outline: none;
+    font-weight: 100;
   }
   
   .search-field:hover {
@@ -92,13 +93,44 @@
     justify-content: center;
   }
   
-  #google {
+  .google-img {
     position: fixed;
     height: 20vh;
-    width: auto;
+    /*width: auto;*/
+    width: 30vh;
     left: 50%;
     top: 20%;
     transform: translate(-50%, 0%);
+    /*background-image: url("../images/google.PNG");*/
+    background-size: contain;
+    background-repeat:no-repeat;
+  }
+  .google-img[name="google"]{
+    background-image: url("../images/google.PNG");
+  }
+  .google-img[name="google-images"] {
+    background-image: url("../images/image_search.PNG");
+  }
+  .google-img[name="advanced-google"]{
+    position:relative;
+    background-image: url("../images/google.PNG");
+    margin-left:1%;
+    height: 4vh;
+    width: 7vw;
+    left:3%;
+   /* top: 10%;*/
+    margin-top: 1%;
+  }
+  div[name="advanced-search"]{
+    font-size:larger;
+    color:rgb(225,0,36); /*Scarlet Red*/
+    font-family: sans-serif;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 1%;
+  }
+  hr{
+    border-color: rgba(0,0,0,0.1);
   }
   @media screen and (max-width: 600px) {
     #google {

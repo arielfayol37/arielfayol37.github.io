@@ -156,6 +156,8 @@ label[name="title"]{
   margin-bottom: 1%;
   /*margin-left: 3%;*/
   height: 40px;
+  
+
 }
 form{
   margin-left: 3%;
@@ -163,7 +165,7 @@ form{
 
 .flex-container  input{
   /*flex-grow: 0.7;*/
-  width: 45%;
+  width: 100%;
   margin-right: 5px;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
@@ -171,6 +173,11 @@ form{
   height: 25px;
   outline:none;
   transition: box-shadow 0.3s ease;
+  
+}
+.input-field {
+  width: 45%;
+  padding-right: 10px;
 }
 .flex-container  input:focus {
   border-color:lightblue;
@@ -193,10 +200,11 @@ form{
   overflow: hidden;
   text-overflow: ellipsis;
   width: 30%;
+
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
   .google-img {
       top: 30%;
   }
@@ -209,12 +217,19 @@ form{
     }
     .flex-container {
       flex-direction: column;
+      text-align: center;
+      margin-top: 20px;
     }
     .flex-container input{
-      width: 65%;
-      margin-bottom: 15px;  
+      width: 100%;
+      
+    }
+    .input-field {
+      height: 40%;
     }
     .labels{
-      width: 30%;
+      height: 40%;
+      width: 100%;
+      margin-bottom: 10px;
     }
 }

@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="google-img" name="advanced-google"> </div>
-        <div name="advanced-search"> Advanced Search</div><hr/>
+        <div name="advanced-search"> Advanced Search</div><hr class="hr"/>
         <div class="other-links">
             <a href="index.html">Google Search</a>
             <a href="image_search.html"> Image Search</a>
@@ -15,8 +15,11 @@
         </div>
         <div class="form-container">
             <form action="" method="get">
-                <label name="title"> Find pages with...</label><br/>
+                
+                
                 <div class="user-input">
+                    <div class="flex-container"><label name="title"> Find pages with...</label><label name="title" class="suggestion"> 
+                        To do this in the Search box</label></div>
                     <div class="flex-container">
                         <div class="labels"><label>all these words:</label></div>
                         <div class="input-field"><input type="text" name=""></div>
@@ -41,8 +44,61 @@
                         <div  class="suggestion"><label>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</label></div>      
                     </div>
                     
+                    <div class="flex-container range" >
+                        <div class="labels"><label>numbers ranging from:</label></div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div class="range-to">to</div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div  class="suggestion"><label>Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</label></div>      
+                    </div>
+                </div>    
+                <div>
+                    <hr class="hr" name="hr-2"/>
+                </div>
+                <div class="user-input">
+                    <div class="flex-container"><label name="title"> Then narrow your results by...</label><label name="title" class="suggestion"> 
+                        To do this in the Search box</label></div>
+                    <div class="flex-container">
+                        <div class="labels"><label>Langauge:</label></div>
+                        <div class="input-field">
+                            <select>
+                                <option value="any language">any language</option>
+                            </select>
+                        </div>
+                        <div  class="suggestion"><label>Type the important words:  tricolor rat terrier</label></div>      
+                    </div>
+                    
+                    <div class="flex-container">
+                        <div class="labels"><label>this exact word or phrase:</label></div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div  class="suggestion"><label>Put exact words in quotes:  "rat terrier"</label></div>      
+                    </div>
+                    
+                    <div class="flex-container">
+                        <div class="labels"><label>any of these words:</label></div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div  class="suggestion"><label>Type OR between all the words you want:  miniature OR standard</label></div>      
+                    </div>
+                    
+                    <div class="flex-container">
+                        <div class="labels"><label>none of these words:</label></div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div  class="suggestion"><label>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</label></div>      
+                    </div>
+                    
+                    <div class="flex-container range" >
+                        <div class="labels"><label>numbers ranging from:</label></div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div class="range-to">to</div>
+                        <div class="input-field"><input type="text" name=""></div>
+                        <div  class="suggestion"><label>Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</label></div>      
+                    </div>
+                </div> 
+
 
                 </div>
+                
+                
             </form>
             
 

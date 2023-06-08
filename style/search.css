@@ -27,7 +27,7 @@
     margin-bottom: 7px;
   }
   .other-links a:hover {
-    background-color: #0056b3;
+    background-color: rgba(66, 133, 244, 0.8);
   }
   .search-field {
     border-radius: 20px;
@@ -111,6 +111,11 @@
   .google-img[name="google-images"] {
     background-image: url("../images/image_search.PNG");
   }
+
+  
+/*----------------------advanced search peculiar--------------------------*/
+
+
   .google-img[name="advanced-google"]{
     position:relative;
     background-image: url("../images/google.PNG");
@@ -129,33 +134,45 @@
     margin-left: 4%;
     margin-bottom: 2%;
   }
-  hr{
+  .hr{
     border-color: rgba(0,0,0,0.1);
+    position:relative;
 }
+
+
+
+
+
 label[name="title"]{
   margin-top: 1%;
   /*font-size: 20px;*/
   font-weight: lighter;
   font:400;
   font-size: 18px;
+  width: 15%;
   
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 2%;
+}
+.suggestion[name="title"]{
+  margin-left:46%;
 }
 .user-input {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 2%;
 }
 
 .flex-container {
+  position:relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 85%;
+  width: 75%;
   margin-bottom: 1%;
   /*margin-left: 3%;*/
-  height: 40px;
+  height: 25px;
   
 
 }
@@ -179,6 +196,13 @@ form{
   width: 45%;
   padding-right: 10px;
 }
+.range-to {
+  width: 4%;
+  text-align: center;
+}
+.range .input-field {
+  width: 20%;
+}
 .flex-container  input:focus {
   border-color:lightblue;
   border-width: 2px;
@@ -197,6 +221,7 @@ form{
 .suggestion {
   color: gray;
   /*white-space: nowrap;*/
+  font-size: small;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 30%;
@@ -204,10 +229,12 @@ form{
 }
 
 
-@media screen and (max-width: 799px) {
+
+@media screen and (max-width: 1100px) {
   .google-img {
       top: 30%;
   }
+
   .search-container {
       top:60%;
       height: 20%;
@@ -218,18 +245,33 @@ form{
     .flex-container {
       flex-direction: column;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 3%;
+      width: 100%;
+
     }
     .flex-container input{
       width: 100%;
       
     }
+    .user-input {
+      margin-bottom: 4%;
+    }
     .input-field {
-      height: 40%;
+      height: 50%;
     }
     .labels{
       height: 40%;
       width: 100%;
       margin-bottom: 10px;
     }
+    .range-to {
+      margin-top: 3%;
+      margin-bottom: 1%;
+    }
+}
+@media screen and (max-width: 600px) {
+  .flex-container {
+    margin-top: 8%;
+  }
+
 }

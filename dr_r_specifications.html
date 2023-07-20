@@ -2,9 +2,31 @@
 <html lang='en'>
         <head><title>Dr R Specifications</title></head>
 <body>
-<p>
+        <p> 0) Implement `validate_answer`: the django view (function) for answer validation and feedback.<br/>
 
-        A) Design the template `phobos: create_course.html` to be nearly-identical to the one provided
+                <h3>Understanding:</h3>
+
+                A question's answer can be an expression or a multiple-choice answer. <br/>
+                
+                i) By expression we mean a float, an algebraic expression, or a vector (more on vectors later).
+                When the instructor creates a question, he specifies the type.
+                        if it's an expression, then he enters text which is going to be parsed by mathjs and stored in ExpressionAnswer variable.
+                ExpressionAnswer is one of the models, which has forein key the Question to which it's supposed to be the answer. That has already been implemented for you.
+
+                ii) A multiple-choice question can have one or multiple answers. The answers of a multiple-choice questions can be gotten easily using 
+                a Django query, because the `McqAnswers` are related to the `Question` model (check phobos: models.py for more understanding).
+
+                <strong>Now, </strong>
+                The user's input is going to be characters, and each time he submits, a javascript fetch is going to be executed,
+                because we ultimately do not want to reload the entire the page. `validate_answer` is supposed to process the fetch
+                and return a JSON object with success attribute True if the user has gotten the correct answer, and False otherwise, along with
+                a feedback message. `validate_answer` has not yet been implemented: that's where you come in!
+
+                <h3>Specification: Blank, at least for now (Will give more details in case you have questions)</h3>
+        </p>
+<p><br/><br/>
+
+        1) Design the template `phobos: create_course.html` to be nearly-identical to the one provided
 by the designer. Django view `create_course` has already been implemented for you.
 You just need to modify the css and possibly JS. <br/>
         <ul>
@@ -17,8 +39,8 @@ You just need to modify the css and possibly JS. <br/>
         </ul>
 </p>
 
-<p>
-B) Create the necessary animations for the templates `astros: register.html` and `astros: login.html`<br/>
+<p><br/><br/>
+1) Create the necessary animations for the templates `astros: register.html` and `astros: login.html`<br/>
         <ul>
    <li> Both the left side and right side of both pages should originally be dimmed. </li>
         (perhaps use the opacity attribute in css)

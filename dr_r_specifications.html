@@ -12,7 +12,7 @@
                 When the instructor creates a question, he specifies the type.
                         if it's an expression, then he enters text which is going to be parsed by mathjs and stored in ExpressionAnswer variable.
                 ExpressionAnswer is one of the models, which has forein key the Question to which it's supposed to be the answer. That has already been implemented for you.
-
+                You may find the `issinstance` in-built python class helpful.
                 ii) A multiple-choice question can have one or multiple answers. The answers of a multiple-choice questions can be gotten easily using 
                 a Django query, because the `McqAnswers` are related to the `Question` model (check phobos: models.py for more understanding).
 
